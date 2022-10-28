@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart v5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/output.css" />
+</head>
+<!-- shadow-lg shadow-indigo-100/50 -->
+
+<body class="overflow-hidden">
+  <div class="pl-5 max-lg:container max-lg:p-5 mx-auto">
+    <a href="index.html" class="absolute top-5 start-0 p-2 flex items-center text-desc hover:text-primary">
+      <svg class="rtl-flip mr-1" height="18px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z">
+        </path>
+      </svg>
+      <span>back to landing</span>
+    </a>
+    <div class="flex flex-row items-center pt-36 lg:pt-0">
+      <div class="lg:w-1/2 w-full bg-white z-10">
+        <div class="mx-auto w-96 pr-5 lg:pr-0">
+          <div class="bg-white rounded-lg">
+            <h2 class="text-h2 font-bold mb-2">Password</h2>
+            <h6 class="text-desc text-h6 mb-10">
+              A reset link is sent to your email address.
+            </h6>
+
+            <div class="mb-4 relative">
+              <input
+                class="input border appearance-none mr-5 rounded w-full px-3 py-3 pt-5 pb-2 focus focus:border-indigo-600 focus:outline-none active:outline-none active:border-indigo-600"
+                id="email" type="email" autofocus />
+              <label for="name"
+                class="label absolute mb-0 -mt-2 pt-4 pl-3 leading-tighter text-gray-400 text-base cursor-text">Email
+                address</label>
+            </div>
+
+            <div class="text-center">
+              <button
+                class="bg-primary hover:bg-blue-dark text-white font-bold py-3 px-6 w-full rounded-lg mt-7 flex items-center justify-center">
+                Reset
+                <span class="ml-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFFFFF"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="#FFFFFF"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></span>
+              </button>
+              <a href="sign_in.html" class="text-p text-desc w-full relative top-5">back to signin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:block h-screen bg-cover w-1/2 py-8 overlay-dark overlay-opacity-25"
+        style="background-image: url(img/1.jpg)">
+        <svg class="absolute h-full top-0 text-white -ml-10" style="width: 5rem" fill="currentColor"
+          viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="50,0 100,0 50,100 0,100"></polygon>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script src="src/input.js"></script>
+</body>
+
+</html>

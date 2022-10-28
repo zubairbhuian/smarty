@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #fff;
+  font-size: 16px;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* Hamburger Menu */
+
+#hero {
+  background: #574fec;
+  background: linear-gradient(180deg, #7a74f0 0, #574fec) !important;
+  /* z-index: -999; */
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.input {
+  transition: border 0.2s ease-in-out;
+  /* min-width: 280px; */
+}
+
+.input:focus + .label,
+.input:active + .label,
+.input.filled + .label {
+  font-size: 0.75rem;
+  transition: all 0.2s ease-out;
+  top: -0.1rem;
+  color: #667eea;
+}
+
+.form-check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #f1f4f8;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid #d9e2ef;
+  height: 1.25em;
+  margin-top: 0.125em;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  vertical-align: top;
+  width: 1.25em;
+  border-radius: 2px;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  background-image: url(../img/check.svg);
+}
+
+.form-check-input:checked {
+  background-color: #574fec;
+  border-color: #574fec;
+}
+
+.label {
+  transition: all 0.2s ease-out;
+  top: 0.4rem;
+  left: 0;
+}
+
+#navbar.sticky-menu {
+  position: fixed !important;
+  top: 0;
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.089) !important;
+}
+
+#navbar.sticky-menu .logo1 {
+  display: none;
+}
+
+#navbar.sticky-menu .logo2 {
+  display: block;
+}
+
+#navbar.sticky-menu a {
+  color: #1c0950 !important;
+  font-weight: 500;
+}
+
+#navbar.sticky-menu .hamburger-top,
+#navbar.sticky-menu .hamburger-middle,
+#navbar.sticky-menu .hamburger-bottom {
+  background: #1c0950;
+}
+
+#navbar .logo2 {
+  display: none;
+}
+
+.scroll-to-top {
+  width: 50px;
+  height: 50px;
+  background: #4a43c9;
+  border-radius: 100px;
+  position: fixed;
+  right: 30px;
+  bottom: 1500px;
+  z-index: 99;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  color: var(--white-color);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.267);
+}
+
+.scroll-to-top.show {
+  bottom: 40px;
+}
+
+.input {
+  transition: border 0.2s ease-in-out;
+}
+
+.input:focus + .label,
+.input:active + .label,
+.input.filled + .label {
+  font-size: 0.75rem;
+  transition: all 0.2s ease-out;
+  top: -0.1rem;
+  color: #667eea;
+}
+
+.label {
+  transition: all 0.2s ease-out;
+  top: 0.4rem;
+  left: 0;
+}
